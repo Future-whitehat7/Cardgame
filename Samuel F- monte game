@@ -1,10 +1,4 @@
-# Project Overview
-
-## Project Schedule
-
-This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
-
-You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
+Three card money monte card game.
 
 |  Day | Deliverable | Status
 |---|---| ---|
@@ -18,11 +12,10 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 
 ## Project Description
-GAME- THREE CARD MONTE (memory game).
+GAME- THREE CARD Money MONTE (card game).
 - A very popular street card game which tests the memory of the player. There are three cards set up which includes the Ace of spades ,
-the player is shown the card, then the card is shuffled. the Player must now follows the card to choose the right one. 
-
-
+the player is shown the card, a bet is placed, then the card is shuffled. the Player must select the right card to
+win, or else they lose their money.
 
 ## Wireframes
 
@@ -38,37 +31,62 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 #### MVP 
 
-- create an array of  3 cards(objects)
-- add click event to each card
-- display the card detail when its clicked
-- shuffle through the array
-- (Figureout)- how to shuffle cards before they are dynamically created
--create message popup showing the cards details.
-- check to see if the card is clicked correctly
-- create a win / lose function.
-- Add user auth
+- create an array of  3 cards(objects) (1)
+- add click event to each card          (2)
+- display the card detail when its clicked    (3)
+- shuffle through the array                (4)
+- (Figureout)- how to shuffle cards before they are dynamically created  (5)
+-create message popup showing the cards details. 	(6)
+- check to see if the card is clicked correctly		(7)
+- create a win / lose function.				(8)
+- Add user auth						(9)
 
 ## Functional Components
 
 Based on the initial logic defined in the previous sections try and breakdown the logic further into functional components, and by that we mean functions.  Try and capture what logic would need to be defined if the game was broken down into the following categories.
 
-### Landing Page
+Post MVP
+### Landing Page 
+-when the page loads, do something.
 
-### Game Initialization
+### Game Initialization	
+- load game and prompt user to do something.
 
 ### Playing The Game 
+- add eventlistener, on click do something. 
+
+### Pause The Game 
+- game pauses, until user returns to play game.
 
 ### Winning The Game
+- if user clicked the right card, they win the gamee.
+
+### Lose The Game
+
+- if user clicked on the wrong card, they lose the game.
 
 ### Resetting The Game
+- prompt user to play again after game ends.
 
 Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe.
 
-| Component | Priority | Estimated Time | Time Invetsted | Actual Time |
-| --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
+| Component 		| Priority 	| Estimated Time 	| Time Invetsted 	| Actual Time |
+| --- |			 :---: |  	 :---: |	        :---: | 		:---: |
+| 1	 		| H 		| 3hrs			| 3.5hrs 		| 3.5hrs |
+| 2		 	| H 		| 3hrs			| 2.5hrs 		| 2.5hrs |
+| 3		 	| H 		| 3hrs			| 2.5hrs 		| 2.5hrs |
+| 4		 	| H 		| 3hrs			| 2.5hrs 		| 2.5hrs |
+| 5		 	| H 		| 3hrs			| 2.5hrs 		| 2.5hrs |
+| 6		 	| H 		| 3hrs			| 2.5hrs 		| 2.5hrs |
+| 7		 	| H 		| 3hrs			| 2.5hrs 		| 2.5hrs |
+| 8		 	| H 		| 3hrs			| 2.5hrs 		| 2.5hrs |
+| 9		 	| H 		| 5hrs			| 2.5hrs 		| 2.5hrs |
+
+
+
+
+
+| Total 		| H 		| 38hrs			| 28hrs 			| 30hrs |
 
 ## Helper Functions
 Helper functions should be generic enought that they can be reused in other applications. Use this section to document all helper functions that fall into this category.
