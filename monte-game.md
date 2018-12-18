@@ -37,7 +37,7 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 - shuffle through the array                (4)
 - (Figureout)- how to shuffle cards before they are dynamically created  (5)
 - create message popup showing the cards details. 	(6)
-- check to see if the card is clicked correctly		(7)
+- check to see if the card is clicked correctly	/ check for a match	(7)
 - create a win / lose function.				(8)
 
 #### Post MVP
