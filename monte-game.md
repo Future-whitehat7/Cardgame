@@ -2,10 +2,10 @@ Three card money monte card game.
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|DEC 18th| Project Description | Incomplete
-|DEC 18th| Wireframes / Priority Matrix / Functional Components | Incomplete
-|DEC 19th| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|DEC 19th| Pseudocode / actual code | Incomplete
+|DEC 18th| Project Description | complete
+|DEC 18th| Wireframes / Priority Matrix / Functional Components | complete
+|DEC 19th| Core Application Structure (HTML, CSS, etc.) | InProgress
+|DEC 19th| Pseudocode / actual code | InProgress
 |DEC 20th| Initial Clickable Model  | Incomplete
 |DEC 20th| MVP | Incomplete
 |DEC 21th| Present | Incomplete
@@ -20,6 +20,24 @@ win, or else they lose their money.
 ## Wireframes
 
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe.
+1) https://res.cloudinary.com/algortihmtech-inc/image/upload/v1545150045/Proj1-Money%20Monte/Screen_Shot_2018-12-18_at_12.50.35_AM.png
+
+2) https://res.cloudinary.com/algortihmtech-inc/image/upload/v1545150044/Proj1-Money%20Monte/Screen_Shot_2018-12-18_at_1.37.02_AM.png
+
+3) https://res.cloudinary.com/algortihmtech-inc/image/upload/v1545150043/Proj1-Money%20Monte/Screen_Shot_2018-12-18_at_1.33.44_AM.png
+
+4) https://res.cloudinary.com/algortihmtech-inc/image/upload/v1545150042/Proj1-Money%20Monte/Screen_Shot_2018-12-18_at_1.17.26_AM.png
+
+5) https://res.cloudinary.com/algortihmtech-inc/image/upload/v1545150042/Proj1-Money%20Monte/Screen_Shot_2018-12-18_at_1.12.12_AM.png
+
+6) https://res.cloudinary.com/algortihmtech-inc/image/upload/v1545150042/Proj1-Money%20Monte/Screen_Shot_2018-12-18_at_1.13.58_AM.png
+
+7) https://res.cloudinary.com/algortihmtech-inc/image/upload/v1545150042/Proj1-Money%20Monte/Screen_Shot_2018-12-18_at_1.24.50_AM.png
+
+8) https://res.cloudinary.com/algortihmtech-inc/image/upload/v1545150042/Proj1-Money%20Monte/Screen_Shot_2018-12-18_at_1.05.18_AM.png
+
+9) https://res.cloudinary.com/algortihmtech-inc/image/upload/v1545151361/Proj1-Money%20Monte/priorityTime.jpg
+
 
 ## Priority Matrix
 
@@ -53,13 +71,13 @@ add counter time 						(13)
 Based on the initial logic defined in the previous sections try and breakdown the logic further into functional components, and by that we mean functions.  Try and capture what logic would need to be defined if the game was broken down into the following categories.
 
 ### Landing Page 
--when the page loads, do something.
+-when the page loads, a description of the game and how to play the game is shown. with the option to play game
 
 ### Game Initialization	
-- load game and prompt user to do something.
+- load game and prompt user to enter their name, place a bet and start the game.
 
 ### Playing The Game 
-- add eventlistener, on click do something. 
+- once users is shown the face of the card, its then flipped and ramdomly shuffles. leaving the player to click on a card when its done. 
 user is prompted to place a bet greater or equal to starting bet price. 
 user places bet, the pot winnigs is increased, the cards are shown, then flipped, then shuffled. the user must now select the correct card.
 
@@ -80,15 +98,15 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component 		| Priority 	| Estimated Time 	| Time Invetsted 	| Actual Time |
 | --- |			 :---: |  	 :---: |	        :---: | 		:---: |
-| 1	 		| H 		| 3hrs			| 3.5hrs 		| 3.5hrs |
-| 2		 	| H 		| 3hrs			| 2.5hrs 		| 2.5hrs |
-| 3		 	| H 		| 3hrs			| 2.5hrs 		| 2.5hrs |
-| 4		 	| H 		| 3hrs			| 2.5hrs 		| 2.5hrs |
-| 5		 	| H 		| 3hrs			| 2.5hrs 		| 2.5hrs |
-| 6		 	| H 		| 3hrs			| 2.5hrs 		| 2.5hrs |
-| 7		 	| H 		| 3hrs			| 2.5hrs 		| 2.5hrs |
-| 8		 	| H 		| 3hrs			| 2.5hrs 		| 2.5hrs |
-| 9		 	| H 		| 5hrs			| 2.5hrs 		| 2.5hrs |
+| 1	 		| H 		| 3hrs			|	 		| 	 |
+| 2		 	| H 		| 3hrs			| 			| 	 |
+| 3		 	| H 		| 3hrs			| 			| 	 |
+| 4		 	| H 		| 3hrs			| 	 		| 	 |
+| 5		 	| H 		| 3hrs			| 			| 	 |
+| 6		 	| H 		| 3hrs			| 	 		| 	 |
+| 7		 	| H 		| 3hrs			| 			| 	 |
+| 8		 	| H 		| 3hrs			|  			|        |
+| 9		 	| H 		| 5hrs			| 			|	 |
 
 
 
