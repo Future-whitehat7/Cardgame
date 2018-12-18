@@ -39,13 +39,19 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 -create message popup showing the cards details. 	(6)
 - check to see if the card is clicked correctly		(7)
 - create a win / lose function.				(8)
+
+#### Post MVP
 - Add user auth						(9)
+- show shuffle animation				(10)
+- adding bootstrap to landing page		         (11)
+- Add music 						(12)
+add times 						(13)
+
 
 ## Functional Components
 
 Based on the initial logic defined in the previous sections try and breakdown the logic further into functional components, and by that we mean functions.  Try and capture what logic would need to be defined if the game was broken down into the following categories.
 
-Post MVP
 ### Landing Page 
 -when the page loads, do something.
 
@@ -54,15 +60,17 @@ Post MVP
 
 ### Playing The Game 
 - add eventlistener, on click do something. 
+user is prompted to place a bet greater or equal to starting bet price. 
+user places bet, the pot winnigs is increased, the cards are shown, then flipped, then shuffled. the user must now select the correct card.
 
 ### Pause The Game 
 - game pauses, until user returns to play game.
 
 ### Winning The Game
 - if user clicked the right card, they win the gamee.
+a win message pops up. then user can either double their money or leave.
 
 ### Lose The Game
-
 - if user clicked on the wrong card, they lose the game.
 
 ### Resetting The Game
@@ -90,6 +98,9 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 ## Helper Functions
 Helper functions should be generic enought that they can be reused in other applications. Use this section to document all helper functions that fall into this category.
+-document.queryselector
+
+
 
 | Function | Description | 
 | --- | :---: |  
