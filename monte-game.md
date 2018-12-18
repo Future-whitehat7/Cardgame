@@ -36,7 +36,7 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 - display the card detail when its clicked    (3)
 - shuffle through the array                (4)
 - (Figureout)- how to shuffle cards before they are dynamically created  (5)
--create message popup showing the cards details. 	(6)
+- create message popup showing the cards details. 	(6)
 - check to see if the card is clicked correctly		(7)
 - create a win / lose function.				(8)
 
