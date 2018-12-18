@@ -38,13 +38,14 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 #### MVP 
 
-- Find and use external api 
-- Render data on page 
-- Allow user to choose favorites 
-- Save their choices in firebase
-
-#### PostMVP 
-
+- create an array of  3 cards(objects)
+- add click event to each card
+- display the card detail when its clicked
+- shuffle through the array
+- (Figureout)- how to shuffle cards before they are dynamically created
+-create message popup showing the cards details.
+- check to see if the card is clicked correctly
+- create a win / lose function.
 - Add user auth
 
 ## Functional Components
