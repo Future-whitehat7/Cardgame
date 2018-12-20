@@ -1,0 +1,131 @@
+
+.jumbotron {
+/* padding: 7rem 2rem; */
+ background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+
+.display-4 {
+  font-size: 5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+
+
+ body {
+/* display: none;  image css from webgradients.com*/
+
+background-image: linear-gradient(to top, #fcc5e4 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #0c1db8 87%, #020f75 100%);
+}
+
+
+.game-Description {}
+.game-Description h2{color:black;}
+.game-Description p{color:black;
+}
+.game-Description button{
+  /* margin: 0 auto; */
+  font-size: 25px;
+  display: block;
+  margin: 0 auto;
+
+}
+
+
+.monte {
+  width: 100%;
+    max-width: 896px;
+    /* margin: 0 auto */
+    margin-bottom: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card {
+  height: 390px;
+  width: 100%;
+  max-width: 296px;
+  border: 1px solid #e7e7e7;
+  display: inline-block;
+background-repeat: no-repeat;
+ background-position: center center;
+background-size: 60%;
+padding: 10px;
+margin: 0 1px;
+}
+
+.diamond {
+  background-image: url("assets/diamond1.png");
+
+}
+.heart {
+  background-image: url("assets/heart1.png");
+}
+
+.spades {
+  background-image: url("assets/spades1.png");
+}
+
+
+.hide-card {
+  animation: hideCard 0.5s linear 2s forwards;
+}
+/*hideCard 0.5 is how fast the cards are going to flip, and linear 3s is
+how long it waits before it flips the card.  */
+
+
+.flip {
+  transform: rotateY(180deg);
+
+}
+
+
+@keyframes flip {
+  from {
+    transform: rotateY(0deg);
+
+
+  }
+  to {
+    transform: rotateY(180deg);
+    background-image:url("assets/back1.png");
+    /* display: none;
+    background-color: yellow;
+    transform: scaleX(1); */
+  }
+}
+
+
+
+@keyframes hideCard {
+  from {
+    transform: rotateY(0deg);
+
+
+  }
+  to {
+    transform: rotateY(180deg);
+    background-image:url("assets/back1.png");
+    /* display: none;
+    background-color: yellow;
+    transform: scaleX(1); */
+  }
+}
+
+.show-card {
+  animation: showCard 0.5s linear 0s forwards;
+}
+
+@keyframes showCard {
+from {
+  transform: rotateY(180deg);
+  transition: 1s;
+}
+}
+/* reference fullstack.io/tutorial */
+ /* @media(max-width:1200px) {
+   .monte {
+     position: initial;
+     top: 0;
+   }
+ } */
