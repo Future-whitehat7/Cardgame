@@ -9,6 +9,7 @@
   font-size: 5rem;
   font-weight: 300;
   line-height: 1.2;
+  margin-left: 20px;
 }
 
 
@@ -44,14 +45,14 @@ background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
 }
 
 .card {
-  height: 390px;
+  height: 412px;
   width: 100%;
   max-width: 296px;
   border: 1px solid #e7e7e7;
   display: inline-block;
 background-repeat: no-repeat;
  background-position: center center;
-background-size: 60%;
+/* background-size: 60%; */
 padding: 10px;
 margin: 0 1px;
 }
@@ -76,9 +77,16 @@ margin: 0 1px;
 how long it waits before it flips the card.  */
 
 
-.flip {
-  transform: rotateY(180deg);
 
+
+.flip {
+  /* from { */
+    transform: rotateY(180deg);
+  /* } */
+  /* to {
+    transform: rotateY(0deg);
+    background-image:url("assets/back1.png");
+} */
 }
 
 

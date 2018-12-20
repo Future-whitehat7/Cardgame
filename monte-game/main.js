@@ -19,7 +19,7 @@ let cardImages = [
 'heart1.png',
 'spades1.png'
 ];
-console.log(cardImages)
+// console.log(cardImages)
 // shuffling the cardImages
 let shuffle = function (shuffleCards) {
   for (let i = shuffleCards.length-1; i > 0; i --){
@@ -41,9 +41,6 @@ function shuffleCards(deck) {
 }
 
 
-
-
-
 const cards = [
   {card: 'Ace', suit: 'Spades'},
   {card: 'Ace', suit: 'Hearts'},
@@ -56,6 +53,7 @@ let shuffledDeck = shuffleCards(cards);
 
 function createCards() {
   for (let i = 0; i < shuffledDeck.length; i ++) {
+
     let cardObj = document.createElement('div');
     cardObj.classList.add('card');
     console.log(cardObj);
