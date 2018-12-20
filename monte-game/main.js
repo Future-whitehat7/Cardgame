@@ -13,17 +13,27 @@
 // dont forget to load back the prompt.
 
 //
-
+let cardImages = [
+'back1.png',
+'diamond1.png',
+'heart1.png',
+'spades1.png'
+];
+console.log(cardImages)
 // shuffling the cardImages
-// Array.prototype.shuffle = function () {
-//   for (var i = cardObj.length; i >=0; i --) {
-//     var randomIndex = Math.floor(Math.random() * (i + 1));
-//     var itemAtIndex = shuffleCards[randomIndex];
+let shuffle = function (shuffleCards) {
+  for (let i = shuffleCards.length-1; i > 0; i --){
+    let randomIndex = Math.floor(Math.random() * (i + 1));
+    let itemAtIndex = shuffleCards[randomIndex];
+
+    shuffleCards[randomIndex] = shuffleCards[i];
+    shuffleCards[i] = itemAtIndex;
+  }
+  console.log(shuffleCards)
+}
+shuffle(cardImages)
 //
-//     shuffleCards[randomIndex] = shuffleCards[i];
-//     shuffleCards[i] = itemAtIndex;
-//   }
-// }
+
 //
 // shuffleCards.shuffle();
 function shuffleCards(deck) {
@@ -32,12 +42,7 @@ function shuffleCards(deck) {
 
 
 
-let cardImages = [
-'back1.png',
-'diamond1.png',
-'heart1.png',
-'spades1.png'
-];
+
 
 const cards = [
   {card: 'Ace', suit: 'Spades'},
@@ -88,12 +93,12 @@ if (shuffledDeck[i].suit === 'Spades') {
       if (cardObj.dataset.name === 'Spades') {
         console.log("you won!");
       }
-else{
-  console.log("keep playing");
-cardObj.classList.add('show-card');
-// console.log("you lose");
-document.querySelector(".card").classList.toggle("flip");
-}
+      else{
+        console.log("keep playing");
+      cardObj.classList.add('show-card');
+      // console.log("you lose");
+      document.querySelector(".card").classList.toggle("flip");
+      }
 
     }); // eventlistener.
 
