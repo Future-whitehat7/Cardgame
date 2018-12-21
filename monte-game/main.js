@@ -40,10 +40,15 @@ let shuffledDeck = shuffleCards(cards);   // assigned a callback function to var
 function createCards() {   // create card funciton, which is loping, then a div, and adding a class list, .
   for (let i = 0; i < shuffledDeck.length; i ++) {
 
+
+
     let cardObj = document.createElement('div');
     cardObj.classList.add('card');
     console.log(cardObj);
     cardObj.setAttribute('data-name', `${shuffledDeck[i].suit}`)    /// added data-name so we can use it to comare the cards. string intepulation, attiching key value pair.
+
+// cardObj
+
 
 if (shuffledDeck[i].suit === 'Spades') {         // assisng css class
   cardObj.classList.add('spades');
@@ -88,13 +93,6 @@ if (shuffledDeck[i].suit === 'Spades') {         // assisng css class
 }
 createCards();
 
-// cardObj {
-//   return this.card.pop();
-// }
-
-
-
-
 
 function startGame() { // doesnt pop up immediately, except on click.
 // // BETTING PROMPT
@@ -132,7 +130,14 @@ function startGame() { // doesnt pop up immediately, except on click.
   console.log(cards[randomSelect]); // picks random card.
 }
 
+let allCards = document.querySelectorAll(".card");
+console.log(allCards);
+
 let replayButton = document.querySelector(".rePlay");
 replayButton.addEventListener("click", function() {
-  location.reload();
+  // location.reload();
+  allCards.forEach((card) => {
+console.log(card.style);
+card.style.transform = "rotateY(360deg)";
+});
 });
