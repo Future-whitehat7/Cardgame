@@ -4,12 +4,13 @@ Three card money monte card game.
 |---|---| ---|
 |DEC 18th| Project Description | complete
 |DEC 18th| Wireframes / Priority Matrix / Functional Components | complete
-|DEC 19th| Core Application Structure (HTML, CSS, etc.) | InProgress
-|DEC 19th| Pseudocode / actual code | InProgress
+|DEC 19th| Core Application Structure (HTML, CSS, etc.) | complete
+|DEC 19th| Pseudocode / actual code | complete
 |DEC 20th| Initial Clickable Model  | Incomplete
-|DEC 20th| MVP | Incomplete
-|DEC 21th| Present | Incomplete
+|DEC 20th| MVP | complete
+|DEC 21th| Present | inProgress
 
+https://pages.git.generalassemb.ly/Futurewhitehat7/project-1-Monte-Game/monte-game/index.html
 
 ## Project Description
 GAME- THREE CARD Money MONTE (card game).
@@ -98,21 +99,21 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component 		| Priority 	| Estimated Time 	| Time Invetsted 	| Actual Time |
 | --- |			 :---: |  	 :---: |	        :---: | 		:---: |
-| 1	 		| H 		| 3hrs			|	 		| 	 |
-| 2		 	| H 		| 3hrs			| 			| 	 |
-| 3		 	| H 		| 3hrs			| 			| 	 |
-| 4		 	| H 		| 3hrs			| 	 		| 	 |
-| 5		 	| H 		| 3hrs			| 			| 	 |
-| 6		 	| H 		| 3hrs			| 	 		| 	 |
-| 7		 	| H 		| 3hrs			| 			| 	 |
-| 8		 	| H 		| 3hrs			|  			|        |
-| 9		 	| H 		| 5hrs			| 			|	 |
+| 1	 		| H 		| 3hrs			|	3 		| 4	 |
+| 2		 	| H 		| 3hrs			| 	3		| 3	 |
+| 3		 	| H 		| 3hrs			| 	3		| 3	 |
+| 4		 	| H 		| 3hrs			| 	3		| 3	 |
+| 5		 	| H 		| 3hrs			| 	3		| 3	 |
+| 6		 	| H 		| 3hrs			| 	 3		| 5	 |
+| 7		 	| H 		| 3hrs			| 	3		| 4	 |
+| 8		 	| H 		| 3hrs			|  	3		|  4      |
+| 9		 	| H 		| 5hrs			| 	3		|4	 |
 
 
 
 
 
-| Total 		| H 		| 38hrs			| 28hrs 			| 30hrs |
+| Total 		| H 		| 38hrs			| 28hrs 			| 40hrs |
 
 ## Helper Functions
 Helper functions should be generic enought that they can be reused in other applications. Use this section to document all helper functions that fall into this category.
@@ -130,7 +131,7 @@ Helper functions should be generic enought that they can be reused in other appl
 ## Code Snippet
 
 Use this section to include a brief code snippet of functionality that you are proud of an a brief description  
-
+I am proud of the classList.remove and add function.
 ```
 function reverse(string) {
 	// here is the code to reverse a string of text
@@ -138,10 +139,7 @@ function reverse(string) {
 ```
 
 ## Change Log
- Use this section to document what changes were made and the reasoning behind those changes.  
-
+got the cards to flip,added a event listener on click, linked the pages together, added a music play button, and a few buttons for the game.
 ## Issues and Resolutions
  Use this section to list of all major issues encountered and their resolution.
-
-#### SAMPLE.....
-**RESOLUTION**: Missing comma after first object in sources {} object
+could not get the cards to shuffle from with css animation, the click event couldnt capture the click.
