@@ -134,10 +134,21 @@ function startGame() { // doesnt pop up immediately, except on click.
 // let allCards = document.querySelectorAll(".card");
 // console.log(allCards);
 
+// //reset timer
+// second = 0;
+// minute = 0;
+// hour = 0;
+// var timer = document.querySelector(".timer");
+// timer.innerHTML = "0 mins 0 secs";
+// clearInterval(interval);
+// }
+
+
 let replayButton = document.querySelector(".rePlay");
 replayButton.addEventListener("click", function() {
-  location.reload();
-//   allCards.forEach((card) => {
+  // location.reload();
+  document.body.onload = createCards();
+//   allCards.forEach((crd) => {
 // console.log(card);
 // card.style.transform = "rotateY(-180deg)";
 // });
