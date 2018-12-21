@@ -12,34 +12,13 @@
 //post change alert color
 // dont forget to load back the prompt.
 
-//
+
 let cardImages = [
 'back1.png',
 'diamond1.png',
 'heart1.png',
 'spades1.png'
 ];
-// console.log(cardImages)
-// shuffling the cardImages
-let shuffle = function (shuffleCards) {
-  for (let i = shuffleCards.length-1; i > 0; i --){
-    let randomIndex = Math.floor(Math.random() * (i + 1));
-    let itemAtIndex = shuffleCards[randomIndex];
-
-    shuffleCards[randomIndex] = shuffleCards[i];
-    shuffleCards[i] = itemAtIndex;
-  }
-  console.log(shuffleCards)
-}
-shuffle(cardImages)
-//
-
-//
-// shuffleCards.shuffle();
-function shuffleCards(deck) {
-  return deck.sort(() => 0.5 - Math.random());
-}
-
 
 const cards = [
   {card: 'Ace', suit: 'Spades'},
@@ -47,19 +26,26 @@ const cards = [
   {card: 'Ace', suit: 'Diamonds'},
 ];
 
+// shuffleCards.shuffle();
+function shuffleCards(deck) {                          //2 created a function that takes deck aas parameter, randomize and sorts it.
+  return deck.sort(() => 0.5 - Math.random());
+}
+
 
 let containerDiv = document.querySelector('.monte');
-let shuffledDeck = shuffleCards(cards);
+let shuffledDeck = shuffleCards(cards);   // assigned a callback function to variable, so we can use in a for loop.
 
-function createCards() {
+
+
+function createCards() {   // create card funciton, which is loping, then a div, and adding a class list, .
   for (let i = 0; i < shuffledDeck.length; i ++) {
 
     let cardObj = document.createElement('div');
     cardObj.classList.add('card');
     console.log(cardObj);
-    cardObj.setAttribute('data-name', `${shuffledDeck[i].suit}`)
+    cardObj.setAttribute('data-name', `${shuffledDeck[i].suit}`)    /// added data-name so we can use it to comare the cards. string intepulation, attiching key value pair.
 
-if (shuffledDeck[i].suit === 'Spades') {
+if (shuffledDeck[i].suit === 'Spades') {         // assisng css class
   cardObj.classList.add('spades');
 } else if (shuffledDeck[i].suit === 'Hearts') {
   cardObj.classList.add('heart');
@@ -68,58 +54,47 @@ if (shuffledDeck[i].suit === 'Spades') {
   cardObj.classList.add('diamond');
 
 }
-
-
-    // trying the fisher-yates shuffle algorithm. uses a for loop and sets the iterator to this.cards.length-1.
-     // shuffleCards() {
-     //   for(let i = this.shuffledDeck.length - 1; i > 0; i--) {
-     //     let randomIndex = Math.floor(Math.random() * )
-     //   }
-     // }
-
-
     cardObj.addEventListener("click", (evt) => {
       evt.preventDefault();
       console.log(`${shuffledDeck[i].card} of ${shuffledDeck[i].suit}`);
       cardObj.classList.remove('hide-card');
       cardObj.classList.add('show-card');
 
-
       console.log(cardObj);
       // check to see if when card is clicked the flip class is added.
       // check if what you clicked matches ace of spade
       if (cardObj.dataset.name === 'Spades') {
-        console.log("you won!");
+        alert("you won!");
       }
       else{
         console.log("keep playing");
-      cardObj.classList.add('show-card');
+      cardObj.classList.add('hide-card');
       // console.log("you lose");
-      document.querySelector(".card").classList.toggle("flip");
       }
 
-    }); // eventlistener.
+    });
 
     containerDiv.appendChild(cardObj);
+    // setTimeout(() => {
+    //   // evt.preventDefault();  // prevents refreshing of page
+    //   cardObj.classList.add('hide-card');
+    // }, 1000);
     setTimeout(() => {
-      // evt.preventDefault();  // prevents refreshing of page
-      cardObj.classList.add('hide-card');
-    }, 1000)
+      cardObj.classList.add('shuffle-cards');
 
+    }, 1300);
 
-    // document.querySelector(".card").classList.toggle("flip"); // example from david walsh css flip
   }
 }
 createCards();
 
-// This shuffle algorithm was provided by Kenny's WDI in-class lab
-// function shuffleCards(deck) {
-//   return deck.sort(() => 0.5 - Math.random());
+// cardObj {
+//   return this.card.pop();
 // }
-// // trying the fisher-yates shuffle algorithm. uses a for loop and sets the iterator to this.cards.length-1.
-//  shuffleCards() {
-//    for(let i = this.)
-//  }
+
+
+
+
 
 function startGame() { // doesnt pop up immediately, except on click.
 // // BETTING PROMPT
@@ -140,9 +115,6 @@ function startGame() { // doesnt pop up immediately, except on click.
   // Converts bet from string to number type
   let gamePot = Number(userBet);
 
-  // Subtracts the bet from user money
-  userMoney -= gamePot;
-
   gamePot += gamePot; //doubles gamepot
   alert(`The pot is $${gamePot}`);
   alert(`You have a total of $${userMoney} remaining`);
@@ -154,43 +126,13 @@ function startGame() { // doesnt pop up immediately, except on click.
   // Adds following money amount to the html elements
   money.innerHTML = `User money ${userMoney}`;
   pot.innerHTML = `Game pot ${gamePot}`;
-  // ******* ends
+
   // creating random index.
   const randomSelect = Math.floor(Math.random() * cards.length);
   console.log(cards[randomSelect]); // picks random card.
 }
 
-
-
-let replayButton = document.querySelector(".replay");
+let replayButton = document.querySelector(".rePlay");
 replayButton.addEventListener("click", function() {
   location.reload();
 });
-
-////////prompt for usrs
-
-// 1. Add click event listeners to each card
-
-
-// 2. Display the card's details when I click it
-// 3. Shuffle my array of card objects
-// 4. How do I shuffle the cards before they get dynamically created
-// const randomSelect= math.floor(math.Random() * deck.length);
-// 5. Make a message popup showing the card's details when clicked
-// onst cardFlipped
-// button on click should start game.
-
-
-
-
-
-
-
-
-
-
-// 3 EASY STEPS FOR DYNAMICALLY CREATING ELEMENT WITH JS
-// let containerDiv = document.querySelector('#container');1
-// let card = document.createElement('div');2
-// containerDiv.appendChild(card);3
-//create element, add clas to element, append the element to body.
