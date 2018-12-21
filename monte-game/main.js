@@ -12,13 +12,13 @@
 //post change alert color
 // dont forget to load back the prompt.
 
-
-let cardImages = [
-'back1.png',
-'diamond1.png',
-'heart1.png',
-'spades1.png'
-];
+//
+// let cardImages = [
+// 'back1.png',
+// 'diamond1.png',
+// 'heart1.png',
+// 'spades1.png'
+// ];
 
 var mySound;
 var audioMp3 = new Audio();
@@ -63,24 +63,26 @@ if (shuffledDeck[i].suit === 'Spades') {         // assisng css class
   cardObj.classList.add('diamond');
 }
 
-    cardObj.addEventListener("click", (evt) => {
+    cardObj.addEventListener("click", (e) => {
       // evt.preventDefault();
 
       console.log(`${shuffledDeck[i].card} of ${shuffledDeck[i].suit}`);
-      cardObj.classList.remove('hide-card');
-      cardObj.classList.add('show-card');
+      e.target.classList.remove('shuffle-cards');
+      e.target.classList.add('show-card');
 
 
-      console.log(cardObj);
+      // console.log(cardObj);
       // check to see if when card is clicked the flip class is added.
       // check if what you clicked matches ace of spade
-      if (cardObj.dataset.name === 'Spades') {
-
-        alert("you won!");
+      if (e.target.dataset.name === 'Spades') {
+        console.log(e.target)
+        alert("you win");
+        // e.target.style.transform = 'rotateY(180deg)';
+        // alert("you won!");
       }
       else{
         console.log("get lost");
-      cardObj.classList.add('hide-card');
+      // cardObj.classList.add('hide-card');
       // console.log("get lost");
       }
 
@@ -165,4 +167,4 @@ replayButton.addEventListener("click", function() {
 // card.style.transform = "rotateY(-180deg)";
 // });
 });
-audioMp3.play();
+// audioMp3.play();
