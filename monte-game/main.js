@@ -57,8 +57,8 @@ if (shuffledDeck[i].suit === 'Spades') {         // assisng css class
   console.log('this worked')
 } else {
   cardObj.classList.add('diamond');
-
 }
+
     cardObj.addEventListener("click", (evt) => {
       evt.preventDefault();
       console.log(`${shuffledDeck[i].card} of ${shuffledDeck[i].suit}`);
@@ -72,9 +72,9 @@ if (shuffledDeck[i].suit === 'Spades') {         // assisng css class
         alert("you won!");
       }
       else{
-        console.log("keep playing");
+        console.log("get lost");
       cardObj.classList.add('hide-card');
-      // console.log("you lose");
+      // console.log("get lost");
       }
 
     });
@@ -87,7 +87,7 @@ if (shuffledDeck[i].suit === 'Spades') {         // assisng css class
     setTimeout(() => {
       cardObj.classList.add('shuffle-cards');
 
-    }, 1300);
+    }, 1200);
 
   }
 }
@@ -96,6 +96,7 @@ createCards();
 
 function startGame() { // doesnt pop up immediately, except on click.
 // // BETTING PROMPT
+
   let userMoney = 200; //User starts with this amount
   alert(`You have a total of $${userMoney} right now`);
 
@@ -126,18 +127,18 @@ function startGame() { // doesnt pop up immediately, except on click.
   pot.innerHTML = `Game pot ${gamePot}`;
 
   // creating random index.
-  const randomSelect = Math.floor(Math.random() * cards.length);
-  console.log(cards[randomSelect]); // picks random card.
+  // const randomSelect = Math.floor(Math.random() * cards.length);
+  // console.log(cards[randomSelect]); // picks random card.
 }
 
-let allCards = document.querySelectorAll(".card");
-console.log(allCards);
+// let allCards = document.querySelectorAll(".card");
+// console.log(allCards);
 
 let replayButton = document.querySelector(".rePlay");
 replayButton.addEventListener("click", function() {
-  // location.reload();
-  allCards.forEach((card) => {
-console.log(card.style);
-card.style.transform = "rotateY(360deg)";
-});
+  location.reload();
+//   allCards.forEach((card) => {
+// console.log(card);
+// card.style.transform = "rotateY(-180deg)";
+// });
 });
