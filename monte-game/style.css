@@ -7,7 +7,6 @@ body {
 /* display: none;  image css from webgradients.com*/
 background-image: url("/assets/Asset1.png");
 /* background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%); */
-/* background-image: linear-gradient(to right, #434343 0%, black 100%); */
 /* background-image: linear-gradient(to top, #fcc5e4 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #0c1db8 87%, #020f75 100%); */
 }
 
@@ -114,6 +113,7 @@ font-weight: lighter;
   margin: 0 auto;
 justify-content: space-between;
 align-items: center;
+background-image: linear-gradient(to left, #f83600 0%, #f9d423 100%);
 
 }
 
@@ -122,16 +122,15 @@ a {
   font-size: 40px;
   display: block;
   align-items: center;
-
-  /* margin: 0 auto; */
+  margin: 0 auto;
 /* align-items: flex-start; */
 }
 
 
 
 .game-Description img {
-margin-left: 110px;
-
+margin-left: 485px;
+padding-bottom: 20px;
 }
 /* .monte { */
   /* width: 800px;
@@ -176,6 +175,7 @@ margin: 0 10px;
   border: 10px solid black;
   position: absolute;
  margin-left: 700px;
+
 }
 .heart {
   background-image: url("assets/heart1.png");
@@ -260,4 +260,24 @@ how long it waits before it flips the card.  */
     transform: rotateY(920deg);
     background-image: url("assets/back1.png");
   }
+}
+
+.rePlay {
+  animation: showCard 3s linear 2s forwards;
+
+}
+a {
+  animation: showCard 2s linear 2s forwards;
+
+}
+
+@media (max-width: 320px) {
+	.deck {
+		width: 85%;
+	}
+
+	.deck .card {
+		height: 4.7rem;
+		width: 4.7rem;
+	}
 }

@@ -20,6 +20,11 @@ let cardImages = [
 'spades1.png'
 ];
 
+var mySound;
+var audioMp3 = new Audio();
+
+
+
 const cards = [
   {card: 'Ace', suit: 'Spades'},
   {card: 'Ace', suit: 'Hearts'},
@@ -41,7 +46,6 @@ function createCards() {   // create card funciton, which is loping, then a div,
   for (let i = 0; i < shuffledDeck.length; i ++) {
 
 
-
     let cardObj = document.createElement('div');
     cardObj.classList.add('card');
     console.log(cardObj);
@@ -60,15 +64,18 @@ if (shuffledDeck[i].suit === 'Spades') {         // assisng css class
 }
 
     cardObj.addEventListener("click", (evt) => {
-      evt.preventDefault();
+      // evt.preventDefault();
+
       console.log(`${shuffledDeck[i].card} of ${shuffledDeck[i].suit}`);
       cardObj.classList.remove('hide-card');
       cardObj.classList.add('show-card');
+
 
       console.log(cardObj);
       // check to see if when card is clicked the flip class is added.
       // check if what you clicked matches ace of spade
       if (cardObj.dataset.name === 'Spades') {
+
         alert("you won!");
       }
       else{
@@ -87,15 +94,19 @@ if (shuffledDeck[i].suit === 'Spades') {         // assisng css class
     setTimeout(() => {
       cardObj.classList.add('shuffle-cards');
 
-    }, 1200);
+    }, 1000);
 
   }
 }
 createCards();
+// mySound = new sound("gametheme.mp3");
+// mySound.play();
+
 
 
 function startGame() { // doesnt pop up immediately, except on click.
 // // BETTING PROMPT
+
 
   let userMoney = 200; //User starts with this amount
   alert(`You have a total of $${userMoney} right now`);
@@ -134,22 +145,24 @@ function startGame() { // doesnt pop up immediately, except on click.
 // let allCards = document.querySelectorAll(".card");
 // console.log(allCards);
 
-// //reset timer
-// second = 0;
-// minute = 0;
-// hour = 0;
-// var timer = document.querySelector(".timer");
-// timer.innerHTML = "0 mins 0 secs";
-// clearInterval(interval);
-// }
+
+function playAudio(){
+  // audioMp3.src = 'http://www.qingli.life/music/Beyond_Jupiter.mp3';
+  audioMp3.src = 'assets/Malicious.mp3';
+
+	audioMp3.play();
+}
 
 
 let replayButton = document.querySelector(".rePlay");
 replayButton.addEventListener("click", function() {
+
   // location.reload();
   document.body.onload = createCards();
+
 //   allCards.forEach((crd) => {
 // console.log(card);
 // card.style.transform = "rotateY(-180deg)";
 // });
 });
+audioMp3.play();
