@@ -25,6 +25,10 @@ footer {
   min-height: 15vh;
 }
 
+ul {
+  list-style: none;
+}
+
 
 .container {
   width: 100%;
@@ -188,7 +192,7 @@ how long it waits before it flips the card.  */
 
   }
   to {
-    transform: rotateY(360deg);
+    transform: rotateY(920deg);
     background-image:url("assets/back1.png");
     /* display: none;
     background-color: yellow;
@@ -219,13 +223,13 @@ how long it waits before it flips the card.  */
     transform: rotateY(-180deg);
   }
   to {
-    transform: rotateY(1080deg);
+    transform: rotateY(1920deg);
     background-image: url("assets/back1.png");
   }
 }
 
 .rePlay {
-  animation: showCard 3s linear 2s forwards;
+  animation: showCard 1s linear 2s forwards;
 
 }
 a {

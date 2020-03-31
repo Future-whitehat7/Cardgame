@@ -21,11 +21,11 @@
 // ];
 
 var mySound;
-var audioMp3 = new Audio();
+var audioMp3 = new Audio();   // defining the var for audio and assigning it a new value.
 
 
 
-const cards = [
+const cards = [    // assigning a cards arrray.
   {card: 'Ace', suit: 'Spades'},
   {card: 'Ace', suit: 'Hearts'},
   {card: 'Ace', suit: 'Diamonds'},
@@ -58,7 +58,7 @@ if (shuffledDeck[i].suit === 'Spades') {         // assisng css class
   cardObj.classList.add('spades');
 } else if (shuffledDeck[i].suit === 'Hearts') {
   cardObj.classList.add('heart');
-  console.log('this worked')
+  console.log('this worked');
 } else {
   cardObj.classList.add('diamond');
 }
@@ -71,7 +71,6 @@ if (shuffledDeck[i].suit === 'Spades') {         // assisng css class
       e.target.classList.add('show-card');
 
 
-      // console.log(cardObj);
       // check to see if when card is clicked the flip class is added.
       // check if what you clicked matches ace of spade
       if (e.target.dataset.name === 'Spades') {
@@ -80,10 +79,14 @@ if (shuffledDeck[i].suit === 'Spades') {         // assisng css class
         // e.target.style.transform = 'rotateY(180deg)';
         // alert("you won!");
       }
-      else{
-        console.log("get lost");
+      else if (e.target.dataset.name !== 'Spades') {
+        console.log(e.target)
+        // alert("You Lose");
       // cardObj.classList.add('hide-card');
       // console.log("get lost");
+      }
+      else {
+        alert("You lost your Money");
       }
 
     });
