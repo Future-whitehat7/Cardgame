@@ -10,7 +10,6 @@ Three card money monte card game.
 |DEC 20th| MVP | complete
 |DEC 21th| Present | inProgress
 
-https://pages.git.generalassemb.ly/Futurewhitehat7/project-1-Monte-Game/monte-game/index.html
 
 ## Project Description
 GAME- THREE CARD Money MONTE (card game).
