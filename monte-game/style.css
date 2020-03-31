@@ -61,7 +61,7 @@ padding: 3rem 10rem;
   text-align: center;
   text-decoration:  underline;
 /* padding-bottom: 10px; */
-font-size: 5em;
+font-size: 4em;
 }
 
 .game-Description h3 {
@@ -123,7 +123,7 @@ background-image: linear-gradient(to left, #f83600 0%, #f9d423 100%);
 
 a {
   /*for index button. */
-  font-size: 40px;
+  font-size: 30px;
   display: block;
   align-items: center;
   margin: 0 auto;
